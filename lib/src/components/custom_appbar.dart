@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'action_helper.dart';
+
 /// appbar 返回按钮类型
 enum AppBarBackType { Back, Close, None }
 
@@ -31,7 +33,7 @@ class MyAppBar extends AppBar implements PreferredSizeWidget {
                         leadingType ?? AppBarBackType.Back,
                         onWillPop: onWillPop,
                       )),
-            actions: actions,
+            actions: ActionHelper.withDebug(actions),
             elevation: elevation ?? 0.5,
             bottom: bottom);
 
