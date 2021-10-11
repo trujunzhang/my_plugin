@@ -15,13 +15,16 @@ class ActionHelper {
 }
 
 Widget getToggleThemeIcon() {
+  bool isDarkMode = ThemeService.isDarkMode();
   return Padding(
       padding: const EdgeInsets.only(right: 20.0),
       child: GestureDetector(
         onTap: () {
           ThemeService().switchTheme();
         },
-        child: const Icon(
+        child: Icon(
+					isDarkMode?
+          Icons.dark_mode:
           Icons.light_mode,
           size: 26.0,
         ),
