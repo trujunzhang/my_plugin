@@ -13,5 +13,6 @@ export 'src/components/index.dart';
 
 export 'src/services/theme_service.dart';
 
+export 'src/flavor/flavor_helper.dart';
 
 

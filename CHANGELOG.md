@@ -2,7 +2,6 @@
 
 * add flutter_flavor.
 
-
 ## 0.0.3
 
 * add backdrop widget and adapt screen tool.
