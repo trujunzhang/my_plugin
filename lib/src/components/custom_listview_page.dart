@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'custom_appbar.dart';
 
-class BaseSingleViewPage extends Scaffold {
-  BaseSingleViewPage(
+class BaseListViewPage extends Scaffold {
+  BaseListViewPage(
       {Key? key,
       String? title,
       PreferredSizeWidget? appBar,
-      required Widget body,
+      required List<Widget> items,
       List<Widget>? actions,
       AppBarBackType? leadType,
       WillPopCallback? onWillPop,
@@ -31,11 +31,11 @@ class BaseSingleViewPage extends Scaffold {
                     MyTitle(title ?? '', color: titleColor ?? Colors.grey[800]),
                 backgroundColor: appBarBackgroundColor,
               ),
-          // backgroundColor: Colors.white,
-          body: SingleChildScrollView(
-            padding: padding,
-            child: body,
-          ),
+          body: ListView.builder(
+              itemCount: items.length,
+              itemBuilder: (BuildContext context, int index) {
+                return items[index];
+              }),
           floatingActionButton: floatingActionButton,
           floatingActionButtonLocation: floatingActionButtonLocation,
         );
