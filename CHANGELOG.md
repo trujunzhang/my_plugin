@@ -1,3 +1,7 @@
+## 0.0.6
+
+* remove default color value in the MyTitle.
+
 ## 0.0.5
 
 * add custom_listview_page.

@@ -47,7 +47,7 @@ class AppBarBack extends StatelessWidget {
   final Color? color;
   final WillPopCallback? onWillPop;
 
-  AppBarBack(this._backType, {this.onWillPop, this.color});
+  const AppBarBack(this._backType, {Key? key, this.onWillPop, this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +62,7 @@ class AppBarBack extends StatelessWidget {
               child: Icon(Icons.close, size: 24.0, color: color),
             )
           : Container(
-              padding: EdgeInsets.only(right: 15),
+              padding: const EdgeInsets.only(right: 15),
               child: Icon(Icons.arrow_back_ios_new, size: 24.0, color: color),
             ),
     );
@@ -73,13 +73,13 @@ class MyTitle extends StatelessWidget {
   final String _title;
   final Color? color;
 
-  MyTitle(this._title, {this.color});
+  const MyTitle(this._title, {Key? key, this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Text(_title,
         style: TextStyle(
-            color: color ?? Color(0xFF222222),
+            color: color,
             fontSize: 18,
             fontWeight: FontWeight.w500));
   }
