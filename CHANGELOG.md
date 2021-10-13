@@ -1,3 +1,7 @@
+## 0.0.7
+
+* add 'kShowThemeIcon' constant.
+
 ## 0.0.6
 
 * remove default color value in the MyTitle.
