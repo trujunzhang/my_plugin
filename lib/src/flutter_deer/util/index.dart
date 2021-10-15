@@ -12,7 +12,9 @@ export "image_utils.dart";
 export "index.dart";
 export "json.dart";
 export "log_utils.dart";
+export 'logger.dart';
 export "network_utils.dart";
 export "screen_utils.dart";
 export "toast_utils.dart";
 export "version_utils.dart";
+
