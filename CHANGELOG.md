@@ -1,3 +1,7 @@
+## 0.0.8
+
+* add logger.dart.
+
 ## 0.0.7
 
 * add 'kShowThemeIcon' constant.
