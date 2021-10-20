@@ -34,7 +34,8 @@ class MyAppBar extends AppBar implements PreferredSizeWidget {
                         onWillPop: onWillPop,
                       )),
             actions: ActionHelper.withDebug(actions),
-            elevation: elevation ?? 0.5,
+            // elevation: elevation ?? 0.5,
+            elevation: elevation, 
             bottom: bottom);
 
   @override
