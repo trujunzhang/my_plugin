@@ -1,3 +1,8 @@
+## 0.0.9
+
+* add app_gradient.dart.
+* remove default elavation value in the MyAppBar .
+
 ## 0.0.8
 
 * add logger.dart.

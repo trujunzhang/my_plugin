@@ -10,9 +10,6 @@ export 'src/Flutter-Movie/widgets/backdrop.dart';
 export 'src/flutter_deer/util/index.dart';
 
 export 'src/components/index.dart';
-
-export 'src/services/theme_service.dart';
-
-export 'src/flavor/flavor_helper.dart';
-
-
+export 'src/services/index.dart';
+export 'src/flavor/index.dart';
+export 'src/effect/index.dart';
