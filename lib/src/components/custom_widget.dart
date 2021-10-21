@@ -4,6 +4,18 @@ import 'package:shimmer/shimmer.dart';
 ///
 /// https://github.com/flutter-devs/flutter_shimmer_animation_effect/blob/master/lib/custom_widget.dart
 ///
+///  Widget buildShimmer() => ListTile(
+///      leading: CustomWidget.circular(height: 64, width: 64),
+///      title: Align(
+///        alignment: Alignment.centerLeft,
+///        child: CustomWidget.rectangular(
+///          height: 16,
+///          width: MediaQuery.of(context).size.width * 0.3,
+///        ),
+///      ),
+///      subtitle: CustomWidget.rectangular(height: 14),
+///    );
+///
 class CustomWidget extends StatelessWidget {
   final double width;
   final double height;
