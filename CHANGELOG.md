@@ -1,3 +1,7 @@
+## 0.1.0
+
+* add custom_tabbar.
+
 ## 0.0.9
 
 * add app_gradient.dart.
