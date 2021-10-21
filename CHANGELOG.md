@@ -1,3 +1,7 @@
+## 0.1.1
+
+* add custom_widget, Explore Shimmer Animation Effect .
+
 ## 0.1.0
 
 * add custom_tabbar.
