@@ -16,6 +16,7 @@ class BaseSingleViewPage extends Scaffold {
       Color appBarBackgroundColor = Colors.white,
       Color? titleColor,
       bool centerTitle = true,
+      Widget? drawer,
       EdgeInsetsGeometry? padding,
       FloatingActionButtonLocation? floatingActionButtonLocation})
       : super(
@@ -32,6 +33,7 @@ class BaseSingleViewPage extends Scaffold {
                 backgroundColor: appBarBackgroundColor,
               ),
           // backgroundColor: Colors.white,
+          drawer: drawer,
           body: SingleChildScrollView(
             padding: padding,
             child: body,

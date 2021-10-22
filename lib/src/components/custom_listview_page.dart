@@ -16,6 +16,7 @@ class BaseListViewPage extends Scaffold {
       Color appBarBackgroundColor = Colors.white,
       Color? titleColor,
       bool centerTitle = true,
+      Widget? drawer,
       EdgeInsetsGeometry? padding,
       FloatingActionButtonLocation? floatingActionButtonLocation})
       : super(
@@ -31,6 +32,7 @@ class BaseListViewPage extends Scaffold {
                     MyTitle(title ?? '', color: titleColor ?? Colors.grey[800]),
                 backgroundColor: appBarBackgroundColor,
               ),
+          drawer: drawer,
           body: ListView.builder(
               itemCount: items.length,
               itemBuilder: (BuildContext context, int index) {

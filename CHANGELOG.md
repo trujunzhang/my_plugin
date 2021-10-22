@@ -1,3 +1,7 @@
+## 0.1.2
+
+* add drawer widget for scaffold subclass.
+
 ## 0.1.1
 
 * add custom_widget, Explore Shimmer Animation Effect .
