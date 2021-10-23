@@ -18,6 +18,7 @@ class MyAppBar extends AppBar implements PreferredSizeWidget {
       Brightness? brightness,
       Color? backgroundColor,
       List<Widget>? actions,
+      bool automaticallyImplyLeading = true,
       bool centerTitle = true,
       double? elevation,
       PreferredSizeWidget? bottom})
@@ -26,6 +27,7 @@ class MyAppBar extends AppBar implements PreferredSizeWidget {
             title: title,
             centerTitle: centerTitle,
             backgroundColor: backgroundColor,
+            automaticallyImplyLeading: automaticallyImplyLeading,
             leading: leading ??
                 (leadingType == AppBarBackType.None
                     ? Container()
@@ -35,7 +37,7 @@ class MyAppBar extends AppBar implements PreferredSizeWidget {
                       )),
             actions: ActionHelper.withDebug(actions),
             // elevation: elevation ?? 0.5,
-            elevation: elevation, 
+            elevation: elevation,
             bottom: bottom);
 
   @override
@@ -48,7 +50,8 @@ class AppBarBack extends StatelessWidget {
   final Color? color;
   final WillPopCallback? onWillPop;
 
-  const AppBarBack(this._backType, {Key? key, this.onWillPop, this.color}) : super(key: key);
+  const AppBarBack(this._backType, {Key? key, this.onWillPop, this.color})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -79,9 +82,7 @@ class MyTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(_title,
-        style: TextStyle(
-            color: color,
-            fontSize: 18,
-            fontWeight: FontWeight.w500));
+        style:
+            TextStyle(color: color, fontSize: 18, fontWeight: FontWeight.w500));
   }
 }

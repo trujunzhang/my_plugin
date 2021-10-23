@@ -1,3 +1,7 @@
+## 0.1.3
+
+* add property 'automaticallyImplyLeading' in the custom_appbar.
+
 ## 0.1.2
 
 * add drawer widget for scaffold subclass.
