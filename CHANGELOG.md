@@ -1,3 +1,7 @@
+## 1.1.1
+
+* remove 'flustars' library.
+
 ## 0.1.3
 
 * add property 'automaticallyImplyLeading' in the custom_appbar.
