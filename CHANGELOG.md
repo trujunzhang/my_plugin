@@ -1,3 +1,7 @@
+## 1.2.1
+
+* add 'logger' library.
+
 ## 1.1.1
 
 * remove 'flustars' library.
