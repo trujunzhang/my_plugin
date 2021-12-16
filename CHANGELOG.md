@@ -1,3 +1,7 @@
+## 1.3.1
+
+* add String extension.
+
 ## 1.2.1
 
 * add 'logger' library.
