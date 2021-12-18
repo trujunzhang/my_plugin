@@ -43,6 +43,7 @@ class CustomTabbar extends StatelessWidget {
             appBar: PreferredSize(
               preferredSize: Size.fromHeight(appbarHeight),
               child: AppBar(
+								leading: Container(),
                 backgroundColor: appbarBackgroundColor,
                 bottom: TabBar(
                     controller: tabBarController,
