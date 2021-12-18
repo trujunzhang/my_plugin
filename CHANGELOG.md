@@ -1,3 +1,7 @@
+## 1.3.2
+
+* add enum BackDropType.
+
 ## 1.3.1
 
 * add String extension.

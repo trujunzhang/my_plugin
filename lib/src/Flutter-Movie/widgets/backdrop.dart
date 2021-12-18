@@ -2,25 +2,37 @@ import 'package:flutter/material.dart';
 
 ///
 /// https://github.com/o1298098/Flutter-Movie/blob/master/lib/widgets/backdrop.dart
+
+enum BackDropType {
+  base,
+  listView,
+  singleScroll,
+}
+
 class BackDrop extends StatefulWidget {
   final Widget? backChild;
   final List<Widget>? frontChildren;
+  final Widget? frontChild;
   final Color? frontBackGroundColor;
   final double backLayerHeight;
-  BackDrop({
-    Key? key,
-    @required this.backChild,
-    @required this.frontChildren,
-    this.frontBackGroundColor,
-    this.backLayerHeight = 0.0,
-  }) : super(key: key);
+  final BackDropType backDropType;
+  const BackDrop(
+      {Key? key,
+      @required this.backChild,
+			this.frontChildren,
+			this.frontChild,
+      this.frontBackGroundColor,
+      this.backLayerHeight = 0.0,
+      this.backDropType = BackDropType.listView})
+      : super(key: key);
   @override
   BackDropState createState() => BackDropState();
 }
 
 class BackDropState extends State<BackDrop> with TickerProviderStateMixin {
   late GlobalKey key;
-  final ClampingScrollPhysics _clampingScrollPhysics = ClampingScrollPhysics();
+  final ClampingScrollPhysics _clampingScrollPhysics =
+      const ClampingScrollPhysics();
   @override
   void initState() {
     key = GlobalKey();
@@ -53,26 +65,38 @@ class BackDropState extends State<BackDrop> with TickerProviderStateMixin {
             minChildSize: _initialChildSize,
             builder: (BuildContext context, ScrollController scrollController) {
               return Container(
-                padding: EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.only(top: 20),
                 decoration: BoxDecoration(
                   color: widget.frontBackGroundColor,
-                  borderRadius: BorderRadius.vertical(
+                  borderRadius: const BorderRadius.vertical(
                     top: Radius.circular(20),
                   ),
                 ),
                 child: Theme(
-                  data: Theme.of(context)
-                      .copyWith(accentColor: Colors.transparent),
-                  child: ListView.builder(
-                    controller: scrollController,
-                    physics: _clampingScrollPhysics,
-                    itemBuilder: (_, index) => widget.frontChildren![index],
-                    itemCount: widget.frontChildren?.length ?? 0,
-                  ),
-                ),
+                    data: Theme.of(context).copyWith(
+                        colorScheme: ColorScheme.fromSwatch()
+                            .copyWith(secondary: Colors.transparent)),
+                    child: _buildBody(context, scrollController)),
               );
             }),
       ],
     );
+  }
+
+  Widget _buildBody(BuildContext context, ScrollController scrollController) {
+    if (widget.backDropType == BackDropType.listView) {
+      return ListView.builder(
+        controller: scrollController,
+        physics: _clampingScrollPhysics,
+        itemBuilder: (_, index) => widget.frontChildren![index],
+        itemCount: widget.frontChildren?.length ?? 0,
+      );
+    }
+    if (widget.backDropType == BackDropType.singleScroll) {
+      return SingleChildScrollView(
+				child: widget.frontChild,
+			);
+    }
+    return widget.frontChild??Container();
   }
 }
