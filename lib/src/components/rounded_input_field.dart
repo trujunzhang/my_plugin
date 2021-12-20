@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 // RoundedInputField(
 //     textEditingController: controllerName,
 //     hintText: "Your Email",
@@ -43,6 +42,13 @@ class RoundedInputField extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
       width: size.width * 0.8,
       decoration: BoxDecoration(
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.grey,
+            blurRadius: 3,
+            offset: Offset(3, 3),
+          ),
+        ],
         color: editTextBackgroundColor,
         borderRadius: BorderRadius.circular(29),
       ),
