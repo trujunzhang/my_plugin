@@ -5,6 +5,7 @@ class BaseScaffold extends Scaffold {
       {Key? key,
       String? title,
       PreferredSizeWidget? appBar,
+			Color? backgroundColor,
       required Widget body,
       Widget? drawer,
       Widget? floatingActionButton,
@@ -12,7 +13,7 @@ class BaseScaffold extends Scaffold {
       : super(
           key: key,
           appBar: appBar,
-          // backgroundColor: Colors.white,
+          backgroundColor: backgroundColor,
           drawer: drawer,
           body: body,
           floatingActionButton: floatingActionButton,

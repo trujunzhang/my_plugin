@@ -7,6 +7,7 @@ class BaseSingleViewPage extends Scaffold {
       {Key? key,
       String? title,
       PreferredSizeWidget? appBar,
+			Color? backgroundColor,
       required Widget body,
       List<Widget>? actions,
       AppBarBackType? leadType,
@@ -22,7 +23,7 @@ class BaseSingleViewPage extends Scaffold {
       : super(
           key: key,
           appBar: appBar,
-          // backgroundColor: Colors.white,
+          backgroundColor: backgroundColor,
           drawer: drawer,
           body: SingleChildScrollView(
             padding: padding,
