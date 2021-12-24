@@ -21,17 +21,7 @@ class BaseSingleViewPage extends Scaffold {
       FloatingActionButtonLocation? floatingActionButtonLocation})
       : super(
           key: key,
-          appBar: appBar ??
-              MyAppBar(
-                brightness: Brightness.light,
-                leadingType: leadType ?? AppBarBackType.Back,
-                onWillPop: onWillPop,
-                actions: actions ?? [],
-                centerTitle: centerTitle,
-                title:
-                    MyTitle(title ?? '', color: titleColor ?? Colors.grey[800]),
-                backgroundColor: appBarBackgroundColor,
-              ),
+          appBar: appBar,
           // backgroundColor: Colors.white,
           drawer: drawer,
           body: SingleChildScrollView(
