@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:my_plugin/src/flavor/flavor_helper.dart';
 
 import 'action_helper.dart';
 
 /// appbar 返回按钮类型
 enum AppBarBackType { Back, Close, None }
 
-const double kNavigationBarHeight = 44.0 + 12.0;
+// double kNavigationBarHeight = 56.0;
 
 // 自定义 AppBar
 class MyAppBar extends AppBar implements PreferredSizeWidget {
@@ -36,12 +37,11 @@ class MyAppBar extends AppBar implements PreferredSizeWidget {
                         onWillPop: onWillPop,
                       )),
             actions: ActionHelper.withDebug(actions),
-            // elevation: elevation ?? 0.5,
             elevation: elevation,
             bottom: bottom);
 
   @override
-  get preferredSize => const Size.fromHeight(kNavigationBarHeight);
+  get preferredSize => Size.fromHeight(FlavorHelper.getAppbarHeight());
 }
 
 // 自定义返回按钮
