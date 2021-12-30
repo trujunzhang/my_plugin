@@ -8,6 +8,7 @@ export 'custom_singlescroll_page.dart';
 export 'custom_tabbar.dart';
 export 'custom_widget.dart';
 export 'rounded_input_field.dart';
+export 'raised_gradient_button.dart';
 
 
 
