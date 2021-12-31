@@ -1,3 +1,7 @@
+## 2.1.1
+
+* add KeepAliveWidget.
+
 ## 1.3.2
 
 * add Rounded_Input_Field.
