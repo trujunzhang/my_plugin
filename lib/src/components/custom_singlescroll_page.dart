@@ -6,6 +6,7 @@ class BaseSingleViewPage extends Scaffold {
   BaseSingleViewPage(
       {Key? key,
       String? title,
+      bool extendBodyBehindAppBar = false,
       PreferredSizeWidget? appBar,
 			Color? backgroundColor,
       required Widget body,
@@ -22,6 +23,7 @@ class BaseSingleViewPage extends Scaffold {
       FloatingActionButtonLocation? floatingActionButtonLocation})
       : super(
           key: key,
+          extendBodyBehindAppBar: extendBodyBehindAppBar,
           appBar: appBar,
           backgroundColor: backgroundColor,
           drawer: drawer,

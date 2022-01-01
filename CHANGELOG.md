@@ -1,3 +1,8 @@
+## 2.2.1
+
+* add 'extendBodyBehindAppBar' property in the scaffold.
+
+
 ## 2.1.1
 
 * add KeepAliveWidget.
