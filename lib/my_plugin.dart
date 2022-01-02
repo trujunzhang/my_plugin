@@ -1,6 +1,10 @@
 library my_plugin;
 
 ///
+/// https://github.com/Sky24n/common_utils
+export 'src/common_utils/index.dart';
+
+///
 /// https://github.com/o1298098/Flutter-Movie
 export 'src/Flutter-Movie/index.dart';
 
