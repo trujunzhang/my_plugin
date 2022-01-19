@@ -1,0 +1,16 @@
+jobs:
+  test:
+    executor: flutter
+    steps:
+      - checkout
+      - run:
+          name: Get Flutter packages
+          command: flutter packages pub get
+      - run:
+          name: Flutter test
+          command: flutter test
+workflows:
+  version: 2
+  flutter-build:
+    jobs:
+      - test
