@@ -23,7 +23,7 @@ class CustomWidget extends StatelessWidget {
 
   const CustomWidget.rectangular(
       {this.width = double.infinity, required this.height})
-      : this.shapeBorder = const RoundedRectangleBorder();
+      : shapeBorder = const RoundedRectangleBorder();
 
   const CustomWidget.circular(
       {this.width = double.infinity,

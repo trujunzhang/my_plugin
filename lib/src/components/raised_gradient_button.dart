@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
-// RaisedGradientButton(
-//   child: Text(
-//     'Button',
-//     style: TextStyle(color: Colors.white),
-//   ),
-//   gradient: LinearGradient(
-//     colors: <Color>[Colors.green, Colors.black],
-//   ),
-//   onPressed: (){
-//     print('button clicked');
-//   }
-// ),
-
+/// ```dart
+/// RaisedGradientButton(
+///   child: Text(
+///     'Button',
+///     style: TextStyle(color: Colors.white),
+///   ),
+///   gradient: LinearGradient(
+///     colors: <Color>[Colors.green, Colors.black],
+///   ),
+///   onPressed: (){
+///     print('button clicked');
+///   }
+/// ),
+/// ```
 class RaisedGradientButton extends StatelessWidget {
   final Widget child;
   final Gradient gradient;
