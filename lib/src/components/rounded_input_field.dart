@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 
-// RoundedInputField(
-//     textEditingController: controllerName,
-//     hintText: "Your Email",
-//     icon: Icons.email,
-//     cursorColor: Colors.black,
-//     editTextBackgroundColor: Colors.grey[200],
-//     iconColor: Colors.black,
-//     onChanged: (value) {
-//       name = value;
-//      },
-//  )
-
+/// ```dart
+/// RoundedInputField(
+///     textEditingController: controllerName,
+///     hintText: "Your Email",
+///     icon: Icons.email,
+///     cursorColor: Colors.black,
+///     editTextBackgroundColor: Colors.grey[200],
+///     iconColor: Colors.black,
+///     onChanged: (value) {
+///       name = value;
+///      },
+///  )
+/// ```
 // Rounded Input field
 // https://github.com/Chromicle/awesome-flutter-ui/blob/master/widgets/rounded_input_field.dart
 class RoundedInputField extends StatelessWidget {
