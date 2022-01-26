@@ -10,36 +10,36 @@ dependencies:
   flutter:
     sdk: flutter
 
-  intl: ^0.17.0
+  intl: 0.17.0
   # 获取当前设备信息 https://github.com/fluttercommunity/plus_plugins/tree/main/packages/device_info_plus
-  device_info_plus: ^3.1.1
-  # flustars: ^2.0.1
-  oktoast: ^3.1.5
+  device_info_plus: 3.2.1
+  # flustars: 2.0.1
+  oktoast: 3.1.5
 
-  logger: ^1.1.0
+  logger: 1.1.0
 
   # network
-  simple_connection_checker: ^0.2.1
+  simple_connection_checker: 0.2.1
 
   # effect
-  shimmer: ^2.0.0
+  shimmer: 2.0.0
 
   # Logic
-  get: ^4.6.1
-  get_storage: ^2.0.3
+  get: 4.6.1
+  get_storage: 2.0.3
 
   # Easy and fast configuration of flavors
-  flutter_flavor: ^3.0.3
+  flutter_flavor: 3.0.3
 
   # https://github.com/dart-lang/crypto
-  crypto: ^3.0.1
+  crypto: 3.0.1
   # https://github.com/dart-lang/convert
-  convert: ^3.0.1
+  convert: 3.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
+  flutter_lints: 1.0.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
