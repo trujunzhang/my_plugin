@@ -7,9 +7,8 @@ Future<Map<String, dynamic>> loadJsonObject(String asset) async {
   return json.decode(data);
 }
 
-
-Future<List<Map<String, dynamic>>> loadJsonList(String asset) async {
+Future<List<dynamic>> loadJsonList(String asset) async {
   String data = await rootBundle.loadString(asset);
-  return json.decode(data);
+  List<dynamic> list = json.decode(data);
+  return list;
 }
-
