@@ -71,7 +71,7 @@ extension ThemeDtx on BuildContext {
 
   IconThemeData get iconTheme => theme.iconTheme;
 
-  ListTileTheme get listTileTheme => ListTileTheme.of(this);
+  ListTileThemeData get listTileTheme => ListTileTheme.of(this);
 
   CardTheme get cardTheme => theme.cardTheme;
 
