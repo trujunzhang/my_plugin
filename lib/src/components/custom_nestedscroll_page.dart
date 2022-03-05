@@ -42,26 +42,24 @@ class BaseNestedScrollPage extends StatelessWidget {
               ];
             },
             body: scrollBody));
-    return Container(
-      child: Scaffold(
-        body: Stack(
-          children: <Widget>[
-            InkWell(
-              splashColor: Colors.transparent,
-              focusColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              hoverColor: Colors.transparent,
-              onTap: () {
-                FocusScope.of(context).requestFocus(FocusNode());
-              },
-              child: Column(
-                children: <Widget>[
-                  body // dody
-                ],
-              ),
+    return Scaffold(
+      body: Stack(
+        children: <Widget>[
+          InkWell(
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            onTap: () {
+              FocusScope.of(context).requestFocus(FocusNode());
+            },
+            child: Column(
+              children: <Widget>[
+                body // dody
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

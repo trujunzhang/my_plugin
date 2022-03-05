@@ -5,21 +5,16 @@ import 'custom_appbar.dart';
 class BaseSingleViewPage extends Scaffold {
   BaseSingleViewPage(
       {Key? key,
-      String? title,
       bool extendBodyBehindAppBar = false,
       PreferredSizeWidget? appBar,
 			Color? backgroundColor,
       required Widget body,
-      List<Widget>? actions,
-      AppBarBackType? leadType,
       WillPopCallback? onWillPop,
       Brightness brightness = Brightness.light,
-      Widget? floatingActionButton,
-      Color appBarBackgroundColor = Colors.white,
-      Color? titleColor,
-      bool centerTitle = true,
       Widget? drawer,
       EdgeInsetsGeometry? padding,
+      Widget? bottomNavigationBar,
+      Widget? floatingActionButton,
       FloatingActionButtonLocation? floatingActionButtonLocation})
       : super(
           key: key,
@@ -31,6 +26,7 @@ class BaseSingleViewPage extends Scaffold {
             padding: padding,
             child: body,
           ),
+					bottomNavigationBar: bottomNavigationBar,
           floatingActionButton: floatingActionButton,
           floatingActionButtonLocation: floatingActionButtonLocation,
         );

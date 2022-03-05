@@ -10,6 +10,7 @@ class BaseScaffold extends Scaffold {
       required Widget body,
       Widget? drawer,
       Widget? floatingActionButton,
+      Widget? bottomNavigationBar,
       FloatingActionButtonLocation? floatingActionButtonLocation})
       : super(
           key: key,
@@ -18,6 +19,7 @@ class BaseScaffold extends Scaffold {
           backgroundColor: backgroundColor,
           drawer: drawer,
           body: body,
+					bottomNavigationBar: bottomNavigationBar,
           floatingActionButton: floatingActionButton,
           floatingActionButtonLocation: floatingActionButtonLocation,
         );
